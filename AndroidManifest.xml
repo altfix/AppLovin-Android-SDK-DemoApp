@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.applovin.sdkdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- These permissions are mandatory to run AppLovin SDK -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- These permissions are strongly recommended and will result in higher performance -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application android:label="AppLovin Demo" >
+
+        <!-- AppLovin API key. Could be obtained from AppLovin management console -->
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="YOUR_SDK_KEY" />
+
+        <!-- This flag enables verbose logging of AppLovin SDK -->
+        <meta-data
+            android:name="applovin.sdk.verbose_logging"
+            android:value="true" />
+
+        <service android:name="com.applovin.sdk.AppLovinService" >
+            <intent-filter>
+                <action android:name="com.applovin.sdk.AppLovinService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.applovin.sdk.AppLovinBootReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".SimpleBannerActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Demonstrates how to add an ad banner into a layout -->
+        <activity android:name=".SimpleBannerActivity" >
+        </activity>
+
+        <!-- Demonstrates how to programmatically add an ad banner into a layout -->
+        <activity android:name=".CustomBannerActivity" >
+        </activity>
+
+        <!-- Demonstrates how to integrate AppLovin Ads with AdWhirl -->
+        <activity android:name=".AdWhirlIntegrationDemo" >
+            <meta-data
+                android:name="ADWHIRL_KEY"
+                android:value="YOUR_ADWHIRL_KEY" />
+        </activity>
+
+        <!-- Demonstrates how to show an interstitial ad -->
+        <activity android:name=".ShowInterstitialActivity" >
+        </activity>
+
+        <!-- Demonstrates how to programmatically prompt user to opt into social ads program -->
+        <activity android:name=".CustomStartupActivity" >
+        </activity>
+
+        <!-- Demonstrates how to add a custom bar notification view -->
+        <activity android:name=".CustomBarNotificationActivity" >
+        </activity>
+
+        <!-- Demonstrates how to programmatically add a callback and custom handling for custom notifications -->
+        <activity android:name=".UserNotificationActivity" >
+        </activity>
+    </application>
+
+</manifest>
