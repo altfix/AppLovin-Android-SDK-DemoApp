@@ -3,3 +3,6 @@ bin
 libs
 
 .DS_Store
+.classpath
+
+.project

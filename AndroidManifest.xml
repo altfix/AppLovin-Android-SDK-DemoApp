@@ -28,10 +28,7 @@
             android:name="applovin.sdk.verbose_logging"
             android:value="true" />
 
-        <service android:name="com.applovin.sdk.AppLovinService" >
-            <intent-filter>
-                <action android:name="com.applovin.sdk.AppLovinService" />
-            </intent-filter>
+        <service android:name="com.applovin.sdk.AppLovinService">
         </service>
 
         <receiver
@@ -43,16 +40,13 @@
             </intent-filter>
         </receiver>
 
+        <!-- Demonstrates how to add an ad banner into a layout -->
         <activity android:name=".SimpleBannerActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Demonstrates how to add an ad banner into a layout -->
-        <activity android:name=".SimpleBannerActivity" >
         </activity>
 
         <!-- Demonstrates how to programmatically add an ad banner into a layout -->
@@ -77,10 +71,11 @@
         <!-- Demonstrates how to add a custom bar notification view -->
         <activity android:name=".CustomBarNotificationActivity" >
         </activity>
-
-        <!-- Demonstrates how to programmatically add a callback and custom handling for custom notifications -->
-        <activity android:name=".UserNotificationActivity" >
+        
+        <!-- Demonstrates how to respond to a click on social push notification -->
+        <activity android:name=".CalledByNotificationActivity" >
         </activity>
+
     </application>
 
 </manifest>
