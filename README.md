@@ -27,5 +27,5 @@ This activity demonstrates how customize notifications in the notification bar. 
 ### [UserNotificationActivity](http://github.com/AppLovin/AppLovin-Android-SDK-DemoApp/blob/master/src/com/applovin/sdkdemo/UserNotificationActivity.java)
 This activity demonstrates how subscribe for push 'user' notifications and handle them. Note: notification API is available since SDK version 1.1.
 
-### [UserNotificationActivity](http://github.com/AppLovin/AppLovin-Android-SDK-DemoApp/blob/master/src/com/applovin/sdkdemo/CalledByNotificationActivity.java)
+### [CalledByNotificationActivity](http://github.com/AppLovin/AppLovin-Android-SDK-DemoApp/blob/master/src/com/applovin/sdkdemo/CalledByNotificationActivity.java)
 This activity demonstrates how extract data when activity is launched from a click on a social push message
