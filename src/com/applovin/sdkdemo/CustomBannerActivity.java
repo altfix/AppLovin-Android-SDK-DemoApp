@@ -33,8 +33,11 @@ public class CustomBannerActivity
         
         setContentView(R.layout.custom_banner );
         
+        // 
+        
+        
         // Get an instance of AppLovin SDK
-        final AppLovinSdk sdk = AppLovinSdk.getInstance( this );
+        AppLovinSdk sdk = AppLovinSdk.getInstance( this );
         
         // Create new ad view
         adView = new AppLovinAdView( sdk, AppLovinAdSize.BANNER, this );

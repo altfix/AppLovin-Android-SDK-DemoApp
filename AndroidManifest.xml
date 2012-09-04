@@ -52,29 +52,18 @@
         <activity android:name=".CustomBannerActivity" >
         </activity>
 
+        
+        <!-- Demonstrates how to show an interstitial ad -->
+        <activity android:name=".ShowInterstitialActivity" >
+        </activity>
+        
+        
         <!-- Demonstrates how to integrate AppLovin Ads with AdWhirl -->
         <activity android:name=".AdWhirlIntegrationDemo" >
             <meta-data
                 android:name="ADWHIRL_KEY"
                 android:value="YOUR_ADWHIRL_KEY" />
         </activity>
-
-        <!-- Demonstrates how to show an interstitial ad -->
-        <activity android:name=".ShowInterstitialActivity" >
-        </activity>
-
-        <!-- Demonstrates how to programmatically prompt user to opt into social ads program -->
-        <activity android:name=".CustomStartupActivity" >
-        </activity>
-
-        <!-- Demonstrates how to add a custom bar notification view -->
-        <activity android:name=".CustomBarNotificationActivity" >
-        </activity>
-        
-        <!-- Demonstrates how to respond to a click on social push notification -->
-        <activity android:name=".CalledByNotificationActivity" >
-        </activity>
-
     </application>
 
 </manifest>
