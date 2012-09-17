@@ -40,7 +40,7 @@
         </receiver>
 
         <!-- Demonstrates how to add an ad banner into a layout -->
-        <activity android:name=".SimpleBannerActivity" >
+        <activity android:name=".CustomTargetingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
