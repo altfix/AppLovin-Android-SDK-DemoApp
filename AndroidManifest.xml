@@ -40,7 +40,7 @@
         </receiver>
 
         <!-- Demonstrates how to add an ad banner into a layout -->
-        <activity android:name=".CustomTargetingActivity" >
+        <activity android:name=".SimpleBannerActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -55,6 +55,10 @@
         
         <!-- Demonstrates how to show an interstitial ad -->
         <activity android:name=".ShowInterstitialActivity" >
+        </activity>
+        
+        <!-- Demonstrates how to add custom targeting information to ad requests -->
+        <activity android:name=".CustomTargetingActivity" >
         </activity>
         
         
