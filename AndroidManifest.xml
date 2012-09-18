@@ -11,9 +11,6 @@
     <!-- These permissions are strongly recommended and will result in higher performance -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_SMS" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application android:label="AppLovin Demo" >
 
@@ -26,18 +23,6 @@
         <meta-data
             android:name="applovin.sdk.verbose_logging"
             android:value="true" />
-
-        <service android:name="com.applovin.sdk.AppLovinService">
-        </service>
-
-        <receiver
-            android:name="com.applovin.sdk.AppLovinBootReceiver"
-            android:enabled="true"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
 
         <!-- Demonstrates how to add an ad banner into a layout -->
         <activity android:name=".SimpleBannerActivity" >
