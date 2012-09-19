@@ -80,8 +80,8 @@ public class CustomTargetingActivity
         //
         // Set highest level of education for the current user. Supported education values are
         // defined in the following constants: EDUCATION_NONE, EDUCATION_HIGH_SCHOOL, 
-        // EDUCATION_SOME_COLLEGE, EDUCATION_IN_COLLEGE, EDUCATION_BACHELORS_DEGREE, 
-        // EDUCATION_MASTERS_DEGREE, EDUCATION_DOCTORAL_DEGREE and EDUCATION_OTHER
+        // EDUCATION_COLLEGE, EDUCATION_BACHELORS, EDUCATION_MASTERS,
+        // EDUCATION_DOCTORAL and EDUCATION_OTHER
         //
         targeting.setEducation( AppLovinTargetingData.EDUCATION_BACHELORS );
         
