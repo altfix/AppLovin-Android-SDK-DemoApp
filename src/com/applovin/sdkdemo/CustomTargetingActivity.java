@@ -9,7 +9,6 @@ import android.app.Activity;
 import android.location.Location;
 import android.os.Bundle;
 
-import com.applovin.adview.AppLovinAdView;
 import com.applovin.sdk.AppLovinSdk;
 import com.applovin.sdk.AppLovinTargetingData;
 
@@ -32,15 +31,6 @@ public class CustomTargetingActivity
         AppLovinTargetingData targeting = sdk.getTargetingData();
 
         //
-        // Set device current device ID. Device ID should an value returned by
-        // android.telephony.TelephonyManager::getDeviceId()
-        //
-        // Please note: Raw value will not be transferred over the network.
-        // AppLovin SDK will hash the value before using it.
-        //
-        targeting.setDeviceId("xxxxxxxxx");
-
-        //
         // Set carrier current device is on.
         //
         targeting.setCarrier("tmobile");
@@ -49,22 +39,6 @@ public class CustomTargetingActivity
         // Set a two-character ISO 3166-1 country code of the device.
         //
         targeting.setCountry("US");
-
-        //
-        // Android ID of the device
-        //
-        // Please note: Raw value will not be transferred over the
-        // network. AppLovin SDK will hash the value before using it.
-        //
-        targeting.setAndroidId("xxxxxxxxx");
-
-        //
-        // MAC address of the device's Wi-Fi module.
-        //
-        // Please note: Raw value will not be transfered over the
-        // network. AppLovin SDK will hash the value before using it.
-        //
-        targeting.setMacAddress("00:00:00:00:00:00");
 
         //
         // Set phone number of the current user.
@@ -103,6 +77,38 @@ public class CustomTargetingActivity
         //
         targeting.setGender(AppLovinTargetingData.GENDER_MALE);
 
+        //
+        // Set highest level of education of current user. Supported education values are
+        // defined in following constants: EDUCATION_NONE, EDUCATION_HIGH_SCHOOL, 
+        // EDUCATION_SOME_COLLEGE, EDUCATION_IN_COLLEGE, EDUCATION_BACHELORS_DEGREE, 
+        // EDUCATION_MASTERS_DEGREE, EDUCATION_DOCTORAL_DEGREE and EDUCATION_OTHER
+        //
+        targeting.setEducation( AppLovinTargetingData.EDUCATION_BACHELORS );
+        
+        //
+        // Set martital status of the current users. Supported values are
+        // defined in following constants: MARITAL_STATUS_NONE, 
+        // MARITAL_STATUS_SINGLE, MARITAL_STATUS_MARRIED, 
+        // MARITAL_STATUS_DIVORCED and MARITAL_STATUS_WIDOWED
+        //
+        targeting.setMaritalStatus( AppLovinTargetingData.MARITAL_STATUS_SINGLE );
+        
+        //
+        // Set ethnicity of the current user. Suppored values are
+        // defined in following constants: ETHNICITY_NONE, ETHNICITY_MIXED, 
+        // ETHNICITY_ASIAN, ETHNICITY_BLACK, ETHNICITY_HISPANIC, 
+        // ETHNICITY_NATIVE_AMERICAN, ETHNICITY_WHITE and ETHNICITY_OTHER.
+        //
+        targeting.setEthnicity( AppLovinTargetingData.ETHNICITY_MIXED );
+        
+        //
+        // Set user's income. Income format is could be as follows:
+        //   - An exact number like 100000 or 100K
+        //   - A range like 10K-30K
+        //   - A range like <100K
+        //
+        targeting.setIncome("80000-120K");
+        
         //
         // Set the location of current user.
         //
