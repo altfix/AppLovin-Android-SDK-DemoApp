@@ -78,10 +78,10 @@ public class CustomTargetingActivity
         targeting.setGender(AppLovinTargetingData.GENDER_MALE);
 
         //
-        // Set highest level of education for the current user. Supported education values are
-        // defined in the following constants: EDUCATION_NONE, EDUCATION_HIGH_SCHOOL, 
-        // EDUCATION_COLLEGE, EDUCATION_BACHELORS, EDUCATION_MASTERS,
-        // EDUCATION_DOCTORAL and EDUCATION_OTHER
+        // Set highest level of education of current user. Supported education values are
+        // defined in following constants: EDUCATION_NONE, EDUCATION_HIGH_SCHOOL, 
+        // EDUCATION_SOME_COLLEGE, EDUCATION_IN_COLLEGE, EDUCATION_BACHELORS, 
+        // EDUCATION_MASTERS, EDUCATION_DOCTORAL and EDUCATION_OTHER
         //
         targeting.setEducation( AppLovinTargetingData.EDUCATION_BACHELORS );
         
