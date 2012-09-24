@@ -18,6 +18,9 @@ This example demonstrates how to programmatically add a view into the layout. It
 ### [AdWhirlIntegrationDemo](http://github.com/AppLovin/AppLovin-Android-SDK-DemoApp/blob/master/src/com/applovin/sdkdemo/AdWhirlIntegrationDemo.java)
 This example demonstrates how to integrate AppLovin Ads with AdWhirl.
 
+### [AdMobMediationListener](http://github.com/AppLovin/AppLovin-Android-SDK-DemoApp/blob/master/src/com/applovin/sdkdemo/AdMobMediationListener.java)
+This example demonstrates how to integrate AppLovin Ads with AdMob Mediation.
+
 ### [CustomTargetingActivity](http://github.com/AppLovin/AppLovin-Android-SDK-DemoApp/blob/master/src/com/applovin/sdkdemo/CustomTargetingActivity.java)
 This example demonstrates how to use custom targeting to improve ad performance.
 

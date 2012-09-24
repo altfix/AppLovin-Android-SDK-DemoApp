@@ -7,7 +7,7 @@
     <!-- These permissions are mandatory to run AppLovin SDK -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    
+
     <!-- These permissions are strongly recommended and will result in higher performance -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -37,22 +37,28 @@
         <activity android:name=".CustomBannerActivity" >
         </activity>
 
-        
         <!-- Demonstrates how to show an interstitial ad -->
         <activity android:name=".ShowInterstitialActivity" >
         </activity>
-        
+
         <!-- Demonstrates how to add custom targeting information to ad requests -->
         <activity android:name=".CustomTargetingActivity" >
         </activity>
-        
-        
+
         <!-- Demonstrates how to integrate AppLovin Ads with AdWhirl -->
         <activity android:name=".AdWhirlIntegrationDemo" >
             <meta-data
                 android:name="ADWHIRL_KEY"
                 android:value="YOUR_ADWHIRL_KEY" />
         </activity>
+
+        <!-- Demonstrates how to integrate AppLovin Ads with AdMob Mediation -->
+        <activity android:name=".AdMobMediationActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
     </application>
 
 </manifest>
