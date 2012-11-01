@@ -41,6 +41,7 @@ public class CustomBannerActivity
         
         // Create new ad view
         adView = new AppLovinAdView( sdk, AppLovinAdSize.BANNER, this );
+        adView.setPlacement("CustomPlacement");
         
         // NOTE: Another way to get hold of AppLovinAdView is to add it to the
         // XML layout and use findViewById() to retrieve it.
