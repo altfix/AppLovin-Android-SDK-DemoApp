@@ -5,6 +5,8 @@
  */
 package com.applovin.sdkdemo;
 
+import com.applovin.sdk.AppLovinSdk;
+
 import android.app.Activity;
 import android.os.Bundle;
 
@@ -22,6 +24,8 @@ public class AdMobMediationActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        
+        AppLovinSdk.initializeSdk(this);
 
         //
         // This loads an AdMob AdView from the admob_mediation_demo layout

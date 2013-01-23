@@ -5,6 +5,8 @@
  */
 package com.applovin.sdkdemo;
 
+import com.applovin.sdk.AppLovinSdk;
+
 import android.app.Activity;
 import android.os.Bundle;
 
@@ -22,6 +24,8 @@ public class SimpleBannerActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        
+        AppLovinSdk.initializeSdk(this);
         
         //
         // PLEASE NOTE:

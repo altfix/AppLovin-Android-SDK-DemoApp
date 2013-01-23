@@ -2,19 +2,13 @@ package com.applovin.sdkdemo;
 
 import android.app.Activity;
 
-import com.applovin.adview.AppLovinAdView;
 import com.applovin.adview.AppLovinInterstitialAd;
 import com.applovin.adview.AppLovinInterstitialAdDialog;
 import com.applovin.sdk.AppLovinAd;
-import com.applovin.sdk.AppLovinAdClickListener;
 import com.applovin.sdk.AppLovinAdDisplayListener;
 import com.applovin.sdk.AppLovinAdLoadListener;
-import com.applovin.sdk.AppLovinAdSize;
 import com.applovin.sdk.AppLovinSdk;
-import com.google.ads.AdSize;
 import com.google.ads.mediation.MediationAdRequest;
-import com.google.ads.mediation.customevent.CustomEventBanner;
-import com.google.ads.mediation.customevent.CustomEventBannerListener;
 import com.google.ads.mediation.customevent.CustomEventInterstitial;
 import com.google.ads.mediation.customevent.CustomEventInterstitialListener;
 

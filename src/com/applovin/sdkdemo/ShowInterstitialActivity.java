@@ -6,6 +6,7 @@
 package com.applovin.sdkdemo;
 
 import com.applovin.adview.AppLovinInterstitialAd;
+import com.applovin.sdk.AppLovinSdk;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -28,6 +29,8 @@ public class ShowInterstitialActivity
     {
         super.onCreate(savedInstanceState);
         
+        AppLovinSdk.initializeSdk(this);
+
         setContentView( R.layout.interstitial_demo );
         
         // Show an interstitial when a button is clicked

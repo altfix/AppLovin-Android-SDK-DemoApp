@@ -31,6 +31,8 @@ public class CustomBannerActivity
     {
         super.onCreate(savedInstanceState);
         
+        AppLovinSdk.initializeSdk(this);
+
         setContentView(R.layout.custom_banner );
         
         // 

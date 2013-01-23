@@ -14,6 +14,7 @@ import com.applovin.adview.AppLovinAdView;
 import com.applovin.sdk.AppLovinAd;
 import com.applovin.sdk.AppLovinAdLoadListener;
 import com.applovin.sdk.AppLovinAdSize;
+import com.applovin.sdk.AppLovinSdk;
 
 /**
  * This activity demonstrates how to integrate AppLovin SDK with AdWhil.
@@ -34,6 +35,8 @@ public class AdWhirlIntegrationDemo
     {
         super.onCreate(savedInstanceState);
         
+        AppLovinSdk.initializeSdk(this);
+
         setContentView( R.layout.adwhirl_integration_demo );
         
         adWhirlLayout = (AdWhirlLayout)findViewById( R.id.adwhirl );

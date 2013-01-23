@@ -35,6 +35,8 @@ public class FullyProgramaticAdActivity
     {
         super.onCreate(savedInstanceState);
         
+        AppLovinSdk.initializeSdk(this);
+
         AppLovinSdk sdk = AppLovinSdk.getInstance( this );
         AppLovinAdService adService = sdk.getAdService();
         adService.loadNextAd( AppLovinAdSize.BANNER, this ); // This activity implements AppLovinAdLoadListener

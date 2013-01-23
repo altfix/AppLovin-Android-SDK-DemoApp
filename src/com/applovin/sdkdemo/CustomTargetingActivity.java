@@ -27,6 +27,8 @@ public class CustomTargetingActivity
     {
         super.onCreate(savedInstanceState);
 
+        AppLovinSdk.initializeSdk(this);
+
         AppLovinSdk sdk = AppLovinSdk.getInstance(this);
         AppLovinTargetingData targeting = sdk.getTargetingData();
 
